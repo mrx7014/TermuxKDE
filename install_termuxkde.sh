@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ════════════════════════════════════════════════
-#   TermuxKDE Installer — by ARMOND (c) 2026
+#   TermuxKDE Installer — by MRX7014 (c) 2026
 # ════════════════════════════════════════════════
 
 LOG="$HOME/termuxkde_error.log"
@@ -46,42 +46,6 @@ error() {
   exit 1
 }
 
-# ── Terminal Size Check ───────────────────────────
-REQUIRED_COLS=88
-REQUIRED_LINES=35
-
-check_terminal_size() {
-  local cols lines
-  cols=$(tput cols 2>/dev/null || echo "${COLUMNS:-0}")
-  lines=$(tput lines 2>/dev/null || echo "${LINES:-0}")
-
-  if [[ "$cols" -lt "$REQUIRED_COLS" || "$lines" -lt "$REQUIRED_LINES" ]]; then
-    clear
-    echo -e "${RED}${BOLD}"
-    echo "  ╔══════════════════════════════════════════╗"
-    echo "  ║        Terminal Size Too Small!          ║"
-    echo "  ╚══════════════════════════════════════════╝"
-    echo -e "${RESET}"
-    echo -e "  ${DIM}Current size :${RESET} ${RED}${BOLD}${cols}x${lines}${RESET}"
-    echo -e "  ${DIM}Required     :${RESET} ${GREEN}${BOLD}${REQUIRED_COLS}x${REQUIRED_LINES}${RESET}"
-    echo ""
-    echo -e "  ${YELLOW}${BOLD}How to resize in Termux:${RESET}"
-    echo -e "  ${DIM}1. Pinch-zoom out on your keyboard to shrink font size${RESET}"
-    echo -e "  ${DIM}2. Or long-press on the terminal → More → Resize Terminal${RESET}"
-    echo -e "  ${DIM}3. Or run this command to set font size manually:${RESET}"
-    echo ""
-    echo -e "     ${CYAN}tput reset${RESET}"
-    echo -e "     ${CYAN}# Then pinch-zoom until you see ${REQUIRED_COLS}x${REQUIRED_LINES}${RESET}"
-    echo ""
-    echo -e "  ${DIM}Check current size anytime with:${RESET}"
-    echo -e "     ${CYAN}echo \"\${COLUMNS}x\${LINES}\"${RESET}"
-    echo ""
-    echo -e "  ${DIM}Once resized, re-run the installer:${RESET}"
-    echo -e "     ${CYAN}bash install_termuxkde.sh${RESET}"
-    echo ""
-    exit 1
-  fi
-}
 
 # ── Detect Shell ──────────────────────────────────
 detect_shell() {
@@ -105,7 +69,7 @@ show_banner() {
   echo "     ██║   ███████╗██║  ██║██║ ╚═╝ ██║╚██████╔╝██╔╝ ██╗██║  ██╗██████╔╝███████╗"
   echo "     ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ ╚══════╝"
   echo -e "${RESET}"
-  echo -e "${YELLOW}KDE Plasma for Termux${RESET} ${DIM}by ARMOND (c) 2026${RESET}"
+  echo -e "${YELLOW}KDE Plasma for Termux${RESET} ${DIM}by MRX7014 (c) 2026${RESET}"
 }
 
 # ── Confirmation ──────────────────────────────────
@@ -350,7 +314,7 @@ show_summary() {
   echo -e "${RED}TermuxKDE-Remove${RESET}   →  Uninstall everything"
   echo -e "${DIM}⚠ TermuxKDE-Remove will delete all project files & packages${RESET}"
   echo -e "${DIM}────────────────────────────────────${RESET}"
-  echo -e "${BOLD}<3 Enjoy Your KDE — ARMOND${RESET}"
+  echo -e "${BOLD}<3 Enjoy Your KDE — MRX7014${RESET}"
 }
 
 # ── Main ──────────────────────────────────────────
