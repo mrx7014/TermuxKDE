@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/badge/Platform-Termux-000000?style=flat-square&logo=android&logoColor=white)](https://termux.dev/)
 [![Desktop](https://img.shields.io/badge/Desktop-KDE%20Plasma-1d99f3?style=flat-square&logo=kde&logoColor=white)](https://kde.org/plasma-desktop/)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
-[![Author](https://img.shields.io/badge/by-ARMOND-ff6b6b?style=flat-square)](https://github.com/mrx7014)
+[![Author](https://img.shields.io/badge/by-MRX7014-ff6b6b?style=flat-square)](https://github.com/mrx7014)
 
 </div>
 
