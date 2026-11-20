@@ -49,18 +49,6 @@
 
 ---
 
-## ✦ Before You Start
-
-Make sure your terminal is at least `88x35`. Check with:
-
-```bash
-echo "${COLUMNS}x${LINES}"
-```
-
-If it's too small, **pinch-zoom out** on the Termux keyboard to shrink the font size until the dimensions are right. The installer will tell you if the size is too small and refuse to run until it's fixed.
-
----
-
 ## ✦ Installation
 
 ```bash
